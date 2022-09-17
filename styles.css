@@ -1,0 +1,125 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: gray;
+	color: white;
+	font-family: "Courier New";
+}
+
+header {
+	text-align: center;
+	background-color: brown;
+	font-size: 50px;
+	height: 10%;
+}
+
+#main-container {
+	width: 100%;
+	height: 90%;
+	display: flex;
+}
+
+#left-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	width: 50%;
+	height: 100%;
+}
+
+#right-container {
+	width: 50%;
+	height: 100%;
+}
+
+#hangman-head {
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	background-color: red;
+	grid-column-start: 2;
+}
+
+#hangman-leftarm {
+	grid-row-start: 2;
+}
+
+#hangman-body {
+	grid-row-start: 2;
+	grid-column-start: 2;
+}
+
+#hangman-rightarm {
+	grid-column-start: 3;
+	grid-row-start: 2;
+}
+
+#hangman-leftleg {
+	grid-row-start: 3;
+}
+
+#hangman-rightleg {
+	grid-row-start: 3;
+	grid-column-start: 3;
+}
+
+.hangman-line {
+	width: 50%;
+	height: 50%;
+	border-left: 20px solid red;
+}
+
+.hangman-leftlimb {
+	transform: rotate(45deg);
+}
+
+.hangman-rightlimb {
+	transform: rotate(135deg);
+}
+
+#answer-container {
+	width: 100%;
+	height: 50%;
+	display: grid;
+	grid-template-columns: repeat(10, auto);
+}
+
+.answer-letter {
+	border-bottom: 20px solid black;
+	width: 90%;
+	height: 90%;
+	margin: auto;
+	font-size: 300%;
+}
+
+.answer-space {
+	border-bottom: none;
+}
+
+#buttons-container {
+	display: grid;
+	grid-template-columns: repeat(10, auto);
+	width: 100%;
+	height: 50%;
+	text-align: center;
+}
+
+.letter-button {
+	background-color: red;
+	width: 70%;
+	height: 70%;
+	cursor: pointer;
+	margin: auto;
+	font-size: 300%;
+}
+
+.used-button {
+	background-color: black;
+}
